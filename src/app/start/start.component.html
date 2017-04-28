@@ -1,0 +1,6 @@
+<p>
+  <span *ngFor="let star of start; let i = index;" class="glyphicon glyphicon-star"
+        [class.glyphicon-star-empty]="star" (click)="clickStar(i)" ></span>
+    <!--上边那句话的意思就是span这个元素是否出现glyphicon-star-empty这个css样式,如果star是true就会多出来这样一个css样式,如果是false就不会多出-->
+  <span>{{rating | number:'1.0-2'}}星</span>
+</p>
